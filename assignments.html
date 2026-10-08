@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLMS | Assignments</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<aside class="sidebar"><div class="logo"><span>SL</span><div><b>SmartLearn</b><small>Student Portal</small></div></div>
+<nav><a href="dashboard.html" data-page="dashboard" class="">⌂ Dashboard</a>
+<a href="courses.html" data-page="courses" class="">▣ Courses</a>
+<a href="attendance.html" data-page="attendance" class="">◷ Attendance</a>
+<a href="marks.html" data-page="marks" class="">▤ Marks & Performance</a>
+<a href="assignments.html" data-page="assignments" class="active">✓ Assignments</a>
+<a href="resources.html" data-page="resources" class="">▤ Learning Resources</a>
+<a href="recommendations.html" data-page="recommendations" class="">★ Smart Recommendations</a>
+<a href="announcements.html" data-page="announcements" class="">🔔 Announcements</a>
+<a href="profile.html" data-page="profile" class="">◉ My Profile</a></nav><button class="logout" onclick="logout()">↪ Logout</button></aside>
+<main class="main"><header class="topbar"><button class="menu-btn" onclick="toggleSidebar()">☰</button>
+<div><h2>Assignments</h2><p id="today"></p></div><div class="top-actions"><span class="notification">🔔 <i>3</i></span>
+<div class="user-mini"><span class="avatar">SL</span><span>Sravana Lakshmi</span></div></div></header>
+<section class="content" data-active="assignments">
+<div class="section-intro"><div><p class="eyebrow">LEARNING TASKS</p><h1>Assignments</h1><p>Open every assignment and review submitted documents.</p></div>
+<select id="assignmentFilter" onchange="filterAssignments()"><option value="all">All</option><option value="pending">Pending</option><option value="submitted">Submitted</option></select></div>
+<div class="assignment-list" id="assignmentList">
+<div class="assignment card" data-status="pending"><div class="assignment-icon blue-bg">DSA</div><div class="assignment-main"><span class="tag">Data Structures</span><h3>Intelligent Multi-pattern Search Engine</h3><p>Implement a document analytics engine using efficient search algorithms.</p><small>Due: <b>10 Oct 2026</b></small></div><span class="badge warning">Pending</span><a class="btn outline" href="assignment-files/DSA_Multipattern_Search_Assignment.docx" target="_blank" rel="noopener noreferrer">Open Assignment</a></div>
+<div class="assignment card" data-status="pending"><div class="assignment-icon purple-bg">ML</div><div class="assignment-main"><span class="tag">Machine Learning</span><h3>Model Evaluation & Hyperparameter Tuning</h3><p>Compare tuning methods and evaluate regression performance.</p><small>Due: <b>12 Oct 2026</b></small></div><span class="badge warning">Pending</span><a class="btn outline" href="assignment-files/ML_Hyperparameter_Tuning_Assignment.docx" target="_blank" rel="noopener noreferrer">Open Assignment</a></div>
+<div class="assignment card" data-status="submitted"><div class="assignment-icon green-bg">DBE</div><div class="assignment-main"><span class="tag">Database Systems</span><h3>FastAPI CRUD Lab</h3><p>Build asynchronous CRUD APIs with validation and dependency injection.</p><small>Submitted: <b>5 Oct 2026</b></small></div><span class="badge success">Submitted</span><a class="btn outline" href="assignment-files/DBE_FastAPI_CRUD_Submission.docx" target="_blank" rel="noopener noreferrer">View Submitted Document</a></div>
+</div>
+</section></main>
+<script src="js/script.js"></script></body></html>

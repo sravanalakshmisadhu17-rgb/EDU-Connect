@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLMS | Dashboard</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<aside class="sidebar"><div class="logo"><span>SL</span><div><b>SmartLearn</b><small>Student Portal</small></div></div>
+<nav><a href="dashboard.html" data-page="dashboard" class="active">⌂ Dashboard</a>
+<a href="courses.html" data-page="courses" class="">▣ Courses</a>
+<a href="attendance.html" data-page="attendance" class="">◷ Attendance</a>
+<a href="marks.html" data-page="marks" class="">▤ Marks & Performance</a>
+<a href="assignments.html" data-page="assignments" class="">✓ Assignments</a>
+<a href="resources.html" data-page="resources" class="">▤ Learning Resources</a>
+<a href="recommendations.html" data-page="recommendations" class="">★ Smart Recommendations</a>
+<a href="announcements.html" data-page="announcements" class="">🔔 Announcements</a>
+<a href="profile.html" data-page="profile" class="">◉ My Profile</a></nav><button class="logout" onclick="logout()">↪ Logout</button></aside>
+<main class="main"><header class="topbar"><button class="menu-btn" onclick="toggleSidebar()">☰</button>
+<div><h2>Dashboard</h2><p id="today"></p></div><div class="top-actions"><span class="notification">🔔 <i>3</i></span>
+<div class="user-mini"><span class="avatar">SL</span><span>Sravana Lakshmi</span></div></div></header>
+<section class="content" data-active="dashboard">
+<div class="hero"><p class="eyebrow" style="color:#c7d2fe">WELCOME BACK</p><h1>Good morning, Sravana Lakshmi 👋</h1><p>Here is your learning overview for today.</p></div>
+<div class="dashboard-grid">
+<div class="card stat-card"><span class="stat-icon">📚</span><small>Enrolled Courses</small><h2>6</h2><p>2 courses need attention</p></div>
+<div class="card stat-card"><span class="stat-icon">✓</span><small>Attendance</small><h2>92%</h2><p>Above the required level</p></div>
+<div class="card stat-card"><span class="stat-icon">🏆</span><small>Average Score</small><h2>84%</h2><p>+5% this semester</p></div>
+</div>
+<br><div class="section-intro"><div><p class="eyebrow">UPCOMING</p><h1 style="font-size:23px">Recent Assignments</h1></div><a class="btn outline" href="assignments.html">View All</a></div>
+<div class="assignment-list">
+<div class="assignment card"><div class="assignment-icon blue-bg">DSA</div><div class="assignment-main"><span class="tag">Data Structures</span><h3>Intelligent Multi-pattern Search Engine</h3><small>Due: <b>10 Oct 2026</b></small></div><span class="badge warning">Pending</span><a class="btn small outline" href="assignment-files/DSA_Multipattern_Search_Assignment.docx" target="_blank">Open</a></div>
+<div class="assignment card"><div class="assignment-icon green-bg">DBE</div><div class="assignment-main"><span class="tag">Database Systems</span><h3>FastAPI CRUD Lab</h3><small>Submitted: <b>5 Oct 2026</b></small></div><span class="badge success">Submitted</span><a class="btn small outline" href="assignment-files/DBE_FastAPI_CRUD_Submission.docx" target="_blank">View</a></div>
+</div>
+</section></main>
+<script src="js/script.js"></script></body></html>

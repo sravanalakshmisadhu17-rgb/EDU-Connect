@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLMS | Learning Resources</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<aside class="sidebar"><div class="logo"><span>SL</span><div><b>SmartLearn</b><small>Student Portal</small></div></div>
+<nav><a href="dashboard.html" data-page="dashboard" class="">⌂ Dashboard</a>
+<a href="courses.html" data-page="courses" class="">▣ Courses</a>
+<a href="attendance.html" data-page="attendance" class="">◷ Attendance</a>
+<a href="marks.html" data-page="marks" class="">▤ Marks & Performance</a>
+<a href="assignments.html" data-page="assignments" class="">✓ Assignments</a>
+<a href="resources.html" data-page="resources" class="active">▤ Learning Resources</a>
+<a href="recommendations.html" data-page="recommendations" class="">★ Smart Recommendations</a>
+<a href="announcements.html" data-page="announcements" class="">🔔 Announcements</a>
+<a href="profile.html" data-page="profile" class="">◉ My Profile</a></nav><button class="logout" onclick="logout()">↪ Logout</button></aside>
+<main class="main"><header class="topbar"><button class="menu-btn" onclick="toggleSidebar()">☰</button>
+<div><h2>Learning Resources</h2><p id="today"></p></div><div class="top-actions"><span class="notification">🔔 <i>3</i></span>
+<div class="user-mini"><span class="avatar">SL</span><span>Sravana Lakshmi</span></div></div></header>
+<section class="content" data-active="resources">
+<div class="section-intro"><div><p class="eyebrow">LEARNING HUB</p><h1>Learning Resources</h1><p>Access notes, videos, references and study materials.</p></div><input class="search" id="resourceSearch" placeholder="Search resources..." oninput="filterResources()"></div>
+<div class="resource-grid" id="resourceGrid">
+<div class="resource-card card" data-name="DSA Pattern Searching Notes"><div class="resource-icon blue-bg">PDF</div><div><span class="tag">DSA</span><h3>Pattern Searching Notes</h3><p>Algorithms and complexity reference notes.</p><br><a class="btn small outline" href="resource-files/DSA_Pattern_Searching_Notes.txt" target="_blank">Open Resource</a></div></div>
+<div class="resource-card card" data-name="Machine Learning Hyperparameter Tuning"><div class="resource-icon purple-bg">VID</div><div><span class="tag">ML</span><h3>Hyperparameter Tuning</h3><p>Video search for grid and Bayesian optimization.</p><br><a class="btn small outline" href="https://www.youtube.com/results?search_query=machine+learning+hyperparameter+tuning" target="_blank" rel="noopener noreferrer">Watch Video</a></div></div>
+<div class="resource-card card" data-name="Database Systems API Guide"><div class="resource-icon green-bg">DOC</div><div><span class="tag">DBE</span><h3>API Development Guide</h3><p>FastAPI, Pydantic and asynchronous CRUD guide.</p><br><a class="btn small outline" href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer">Read Guide</a></div></div>
+<div class="resource-card card" data-name="Operating Systems IPC"><div class="resource-icon orange-bg">PDF</div><div><span class="tag">OS</span><h3>IPC & Process Management</h3><p>Pipes, sockets, shared memory and process control.</p><br><a class="btn small outline" href="https://www.geeksforgeeks.org/inter-process-communication-ipc/" target="_blank" rel="noopener noreferrer">Open Resource</a></div></div>
+</div>
+</section></main>
+<script src="js/script.js"></script></body></html>

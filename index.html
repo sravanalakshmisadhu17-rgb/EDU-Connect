@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SmartLearn | Login</title><link rel="stylesheet" href="css/style.css"></head>
+<body style="display:grid;place-items:center;padding:20px">
+<div class="card" style="width:min(430px,100%);padding:32px">
+<div class="logo" style="padding:0 0 25px;color:#111827"><span>SL</span><div><b>SmartLearn</b><small>Smart Learning Management System</small></div></div>
+<h1 style="font-size:26px">Welcome back</h1><p style="color:var(--muted);margin:8px 0 22px">Sign in to your student portal.</p>
+<label style="display:block;margin-bottom:6px;font-size:13px;font-weight:600">Email</label><input id="email" class="search" style="width:100%;margin-bottom:15px" value="sravana@student.slms">
+<label style="display:block;margin-bottom:6px;font-size:13px;font-weight:600">Password</label><input id="password" type="password" class="search" style="width:100%;margin-bottom:20px" value="student123">
+<button class="btn" style="width:100%" onclick="login()">Login</button>
+<p style="text-align:center;color:var(--muted);font-size:12px;margin-top:16px">Demo login: any non-empty email and password</p>
+</div>
+<script>
+function login(){const e=document.getElementById('email').value.trim(),p=document.getElementById('password').value.trim();if(!e||!p){alert('Please enter email and password');return}localStorage.setItem('slmsLoggedIn','true');location.href='dashboard.html'}
+</script></body></html>

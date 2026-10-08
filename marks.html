@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLMS | Marks & Performance</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<aside class="sidebar"><div class="logo"><span>SL</span><div><b>SmartLearn</b><small>Student Portal</small></div></div>
+<nav><a href="dashboard.html" data-page="dashboard" class="">⌂ Dashboard</a>
+<a href="courses.html" data-page="courses" class="">▣ Courses</a>
+<a href="attendance.html" data-page="attendance" class="">◷ Attendance</a>
+<a href="marks.html" data-page="marks" class="active">▤ Marks & Performance</a>
+<a href="assignments.html" data-page="assignments" class="">✓ Assignments</a>
+<a href="resources.html" data-page="resources" class="">▤ Learning Resources</a>
+<a href="recommendations.html" data-page="recommendations" class="">★ Smart Recommendations</a>
+<a href="announcements.html" data-page="announcements" class="">🔔 Announcements</a>
+<a href="profile.html" data-page="profile" class="">◉ My Profile</a></nav><button class="logout" onclick="logout()">↪ Logout</button></aside>
+<main class="main"><header class="topbar"><button class="menu-btn" onclick="toggleSidebar()">☰</button>
+<div><h2>Marks & Performance</h2><p id="today"></p></div><div class="top-actions"><span class="notification">🔔 <i>3</i></span>
+<div class="user-mini"><span class="avatar">SL</span><span>Sravana Lakshmi</span></div></div></header>
+<section class="content" data-active="marks">
+<div class="section-intro"><div><p class="eyebrow">PERFORMANCE</p><h1>Marks & Performance</h1><p>Track your academic performance across subjects.</p></div></div>
+<div class="dashboard-grid">
+<div class="card stat-card"><small>Overall Average</small><h2>84%</h2><p>Current semester</p></div>
+<div class="card stat-card"><small>Highest Score</small><h2>91%</h2><p>Database Systems</p></div>
+<div class="card stat-card"><small>Improvement</small><h2>+5%</h2><p>Compared with last assessment</p></div>
+</div><br>
+<div class="table-wrap card"><table class="data-table"><thead><tr><th>Course</th><th>Internal</th><th>Assignment</th><th>Exam</th><th>Overall</th></tr></thead><tbody>
+<tr><td>DSA</td><td>27/30</td><td>18/20</td><td>29/35</td><td>84%</td></tr>
+<tr><td>ML</td><td>25/30</td><td>17/20</td><td>27/35</td><td>78%</td></tr>
+<tr><td>DBE</td><td>29/30</td><td>19/20</td><td>32/35</td><td>91%</td></tr>
+<tr><td>OS</td><td>28/30</td><td>18/20</td><td>30/35</td><td>86%</td></tr>
+<tr><td>AI</td><td>26/30</td><td>16/20</td><td>30/35</td><td>80%</td></tr>
+</tbody></table></div>
+</section></main>
+<script src="js/script.js"></script></body></html>

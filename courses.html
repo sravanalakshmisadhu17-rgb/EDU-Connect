@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLMS | Courses</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<aside class="sidebar"><div class="logo"><span>SL</span><div><b>SmartLearn</b><small>Student Portal</small></div></div>
+<nav><a href="dashboard.html" data-page="dashboard" class="">⌂ Dashboard</a>
+<a href="courses.html" data-page="courses" class="active">▣ Courses</a>
+<a href="attendance.html" data-page="attendance" class="">◷ Attendance</a>
+<a href="marks.html" data-page="marks" class="">▤ Marks & Performance</a>
+<a href="assignments.html" data-page="assignments" class="">✓ Assignments</a>
+<a href="resources.html" data-page="resources" class="">▤ Learning Resources</a>
+<a href="recommendations.html" data-page="recommendations" class="">★ Smart Recommendations</a>
+<a href="announcements.html" data-page="announcements" class="">🔔 Announcements</a>
+<a href="profile.html" data-page="profile" class="">◉ My Profile</a></nav><button class="logout" onclick="logout()">↪ Logout</button></aside>
+<main class="main"><header class="topbar"><button class="menu-btn" onclick="toggleSidebar()">☰</button>
+<div><h2>Courses</h2><p id="today"></p></div><div class="top-actions"><span class="notification">🔔 <i>3</i></span>
+<div class="user-mini"><span class="avatar">SL</span><span>Sravana Lakshmi</span></div></div></header>
+<section class="content" data-active="courses">
+<div class="section-intro"><div><p class="eyebrow">MY ACADEMICS</p><h1>Courses</h1><p>View your enrolled courses and learning progress.</p></div><input class="search" id="courseSearch" oninput="filterCourses()" placeholder="Search courses..."></div>
+<div class="course-grid">
+<div class="course-card card" data-name="Data Structures & Algorithms"><span class="tag">DSA</span><h3>Data Structures & Algorithms</h3><p>Core algorithms, trees, graphs and dynamic programming.</p><div class="progress"><span style="width:84%"></span></div><small>84% learning progress • Prof. Anil Kumar</small></div><div class="course-card card" data-name="Machine Learning"><span class="tag">ML</span><h3>Machine Learning</h3><p>Supervised learning, evaluation and model tuning.</p><div class="progress"><span style="width:78%"></span></div><small>78% learning progress • Dr. Priya Rao</small></div><div class="course-card card" data-name="Database Systems Engineering"><span class="tag">DBE</span><h3>Database Systems Engineering</h3><p>SQL, APIs, database design and distributed backend concepts.</p><div class="progress"><span style="width:91%"></span></div><small>91% learning progress • Prof. Ramesh</small></div><div class="course-card card" data-name="Operating Systems"><span class="tag">OS</span><h3>Operating Systems</h3><p>Processes, threads, memory, IPC and file systems.</p><div class="progress"><span style="width:86%"></span></div><small>86% learning progress • Dr. Kiran</small></div><div class="course-card card" data-name="Artificial Intelligence"><span class="tag">AI</span><h3>Artificial Intelligence</h3><p>Search, CSP, games, reasoning and intelligent agents.</p><div class="progress"><span style="width:80%"></span></div><small>80% learning progress • Dr. Meera</small></div><div class="course-card card" data-name="Data Science"><span class="tag">DS</span><h3>Data Science</h3><p>Statistics, visualization, regression and model interpretation.</p><div class="progress"><span style="width:88%"></span></div><small>88% learning progress • Prof. Neha</small></div></div></section></main>
+<script src="js/script.js"></script></body></html>

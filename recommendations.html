@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLMS | Smart Recommendations</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<aside class="sidebar"><div class="logo"><span>SL</span><div><b>SmartLearn</b><small>Student Portal</small></div></div>
+<nav><a href="dashboard.html" data-page="dashboard" class="">⌂ Dashboard</a>
+<a href="courses.html" data-page="courses" class="">▣ Courses</a>
+<a href="attendance.html" data-page="attendance" class="">◷ Attendance</a>
+<a href="marks.html" data-page="marks" class="">▤ Marks & Performance</a>
+<a href="assignments.html" data-page="assignments" class="">✓ Assignments</a>
+<a href="resources.html" data-page="resources" class="">▤ Learning Resources</a>
+<a href="recommendations.html" data-page="recommendations" class="active">★ Smart Recommendations</a>
+<a href="announcements.html" data-page="announcements" class="">🔔 Announcements</a>
+<a href="profile.html" data-page="profile" class="">◉ My Profile</a></nav><button class="logout" onclick="logout()">↪ Logout</button></aside>
+<main class="main"><header class="topbar"><button class="menu-btn" onclick="toggleSidebar()">☰</button>
+<div><h2>Smart Recommendations</h2><p id="today"></p></div><div class="top-actions"><span class="notification">🔔 <i>3</i></span>
+<div class="user-mini"><span class="avatar">SL</span><span>Sravana Lakshmi</span></div></div></header>
+<section class="content" data-active="recommendations">
+<div class="section-intro"><div><p class="eyebrow">PERSONALIZED LEARNING</p><h1>Smart Recommendations</h1><p>Suggestions based on your recent learning performance.</p></div></div>
+<div class="recommend-grid">
+<div class="recommend card"><span class="tag">HIGH PRIORITY</span><h3>📘 Strengthen Machine Learning</h3><p>Your current ML score is 78%. Review hyperparameter tuning and model evaluation before the next assessment.</p><br><a class="btn small" href="resources.html">View Resources</a></div>
+<div class="recommend card"><span class="tag">RECOMMENDED</span><h3>🌳 Practice Advanced DSA</h3><p>Your DSA progress is good. Practice pattern searching, graph algorithms and dynamic programming to improve further.</p><br><a class="btn small" href="resources.html">Start Learning</a></div>
+<div class="recommend card"><span class="tag">MAINTAIN</span><h3>🗄️ Continue DBE Practice</h3><p>Your Database Systems performance is 91%. Continue with API design and asynchronous CRUD exercises.</p><br><a class="btn small" href="assignments.html">View Assignments</a></div>
+<div class="recommend card"><span class="tag">UPCOMING</span><h3>📝 Complete DSA Assignment</h3><p>Your DSA assignment is due on 10 Oct 2026. Open the assignment document and begin early.</p><br><a class="btn small" href="assignment-files/DSA_Multipattern_Search_Assignment.docx" target="_blank">Open Assignment</a></div>
+</div>
+</section></main>
+<script src="js/script.js"></script></body></html>

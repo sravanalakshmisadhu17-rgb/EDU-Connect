@@ -1,0 +1,16 @@
+DSA PATTERN SEARCHING NOTES
+
+1. Pattern Searching
+Pattern searching finds occurrences of a pattern in a text.
+
+2. Common Algorithms
+Naive pattern matching, KMP, Rabin-Karp, Boyer-Moore and Aho-Corasick.
+
+3. Multi-pattern Searching
+Aho-Corasick builds a trie with failure links and can search many patterns efficiently.
+
+4. Complexity
+For Aho-Corasick, preprocessing depends on the total pattern length and the alphabet; searching is linear in the text length plus the number of reported matches.
+
+5. Exam Tip
+Remember: KMP is primarily for one pattern, while Aho-Corasick is designed for multiple patterns.

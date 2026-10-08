@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLMS | My Profile</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<aside class="sidebar"><div class="logo"><span>SL</span><div><b>SmartLearn</b><small>Student Portal</small></div></div>
+<nav><a href="dashboard.html" data-page="dashboard" class="">⌂ Dashboard</a>
+<a href="courses.html" data-page="courses" class="">▣ Courses</a>
+<a href="attendance.html" data-page="attendance" class="">◷ Attendance</a>
+<a href="marks.html" data-page="marks" class="">▤ Marks & Performance</a>
+<a href="assignments.html" data-page="assignments" class="">✓ Assignments</a>
+<a href="resources.html" data-page="resources" class="">▤ Learning Resources</a>
+<a href="recommendations.html" data-page="recommendations" class="">★ Smart Recommendations</a>
+<a href="announcements.html" data-page="announcements" class="">🔔 Announcements</a>
+<a href="profile.html" data-page="profile" class="active">◉ My Profile</a></nav><button class="logout" onclick="logout()">↪ Logout</button></aside>
+<main class="main"><header class="topbar"><button class="menu-btn" onclick="toggleSidebar()">☰</button>
+<div><h2>My Profile</h2><p id="today"></p></div><div class="top-actions"><span class="notification">🔔 <i>3</i></span>
+<div class="user-mini"><span class="avatar">SL</span><span>Sravana Lakshmi</span></div></div></header>
+<section class="content" data-active="profile">
+<div class="section-intro"><div><p class="eyebrow">ACCOUNT</p><h1>My Profile</h1><p>Your student information.</p></div></div>
+<div class="profile card"><div><div class="profile-avatar">SL</div></div><div><h2>Sravana Lakshmi</h2><p style="color:var(--muted);margin:7px 0 20px">Student • Smart Learning Management System</p><div class="profile-grid">
+<div class="field"><small>Student ID</small>SLMS2026-017</div><div class="field"><small>Department</small>Computer Science & Engineering</div>
+<div class="field"><small>Year</small>1st Year</div><div class="field"><small>Semester</small>Semester 1</div>
+<div class="field"><small>Email</small>sravana@student.slms</div><div class="field"><small>Overall Attendance</small>92%</div>
+</div></div></div>
+</section></main>
+<script src="js/script.js"></script></body></html>
